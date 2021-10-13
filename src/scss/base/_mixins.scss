@@ -13,6 +13,10 @@
   }
 }
 
+@mixin shadow {
+  background-color: red;
+  box-shadow: 10px 10px 8px #888888;
+}
 // Media queries
 @mixin bp($point) {
   @if $point == large {
@@ -48,7 +52,5 @@
   :-ms-input-placeholder      {@content}
 }
 
-@mixin shadow {
-  background-color: red;
-  box-shadow: 10px 10px 8px #888888;
-}
+
+
